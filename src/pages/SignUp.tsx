@@ -60,7 +60,6 @@ export default function SignUp() {
           NOME COMPLETO
           <input
             type='text'
-            minLength={4}
             pattern='[A-Z][a-z]* [A-Z][a-z]*'
             title='Nome inválido'
             required

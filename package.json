@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/react-router-dom": "^5.1.6",
     "axios": "^0.21.0",
     "leaflet": "^1.7.1",
     "react": "^17.0.1",
@@ -14,6 +13,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.6",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -36,17 +36,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": []
   }
 }
