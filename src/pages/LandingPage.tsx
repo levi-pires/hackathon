@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { BiMenu, BiSquare, BiCircle } from "react-icons/all";
 import { Map, TileLayer, Marker } from "react-leaflet";
 import Leaflet from "leaflet";
@@ -23,23 +23,23 @@ export default function Landing() {
   return (
     <div id='landing-page'>
       <header>
- 	      <BiMenu />
- 	      <img src={loupe} alt='loupe' />
- 	      <Link to='/login' >LOGIN</Link>
- 	    </header>
+        <BiMenu />
+        <img src={loupe} alt='loupe' />
+        <Link to='/login'>LOGIN</Link>
+      </header>
 
-			<img src={landing_img} alt='landing' className='landing-image'/>
+      <img src={landing_img} alt='landing' className='landing-image' />
 
       <main>
         <div className='about'>
           <h1>SOBRE O PROJETO</h1>
 
           <p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
             doloribus accusamus iste hic provident consequuntur a distinctio
             libero alias nemo, illum recusandae velit obcaecati voluptatibus
             temporibus excepturi sit asperiores sint?
-					</p>
+          </p>
         </div>
 
         <div className='tour'>
@@ -55,7 +55,7 @@ export default function Landing() {
           <Map
             center={{ lat: -23.5104642, lng: -46.5021313 }}
             zoom={15}
-						style={{width: '100%', height: '250px'}}
+            style={{ width: "100%", height: "250px" }}
           >
             <TileLayer url={tileUrl} />
 
@@ -72,21 +72,21 @@ export default function Landing() {
             </span>
 
             <ul className='tour-route'>
-               <div className='detail-left'>
-                 <BiCircle />
-								 <div className='line'/>
-                 <BiSquare />
-               </div>
+              <div className='detail-left'>
+                <BiCircle />
+                <div className='line' />
+                <BiSquare />
+              </div>
 
-							<div className='list-wrapper'>
-  	            <li>
-  	              <div className='waypoint'>PONTO INICIAL</div>
-  	            </li>
+              <div className='list-wrapper'>
+                <li>
+                  <div className='waypoint'>PONTO INICIAL</div>
+                </li>
 
-  	            <li>
-  	              <div className='waypoint'>PONTO FINAL</div>
-	              </li>
-							</div>
+                <li>
+                  <div className='waypoint'>PONTO FINAL</div>
+                </li>
+              </div>
             </ul>
 
             <button>INICIAR</button>
@@ -109,11 +109,16 @@ export default function Landing() {
         <div className='newsletter'>
           <h1>NEWSLETTER</h1>
 
-					<form>
-	          <input type='email' required placeholder='INSIRA SEU E-MAIL' name='email' />
+          <form>
+            <input
+              type='email'
+              required
+              placeholder='INSIRA SEU E-MAIL'
+              name='email'
+            />
 
-  	        <button type='submit'>OK</button>
-					</form>
+            <button type='submit'>OK</button>
+          </form>
         </div>
       </main>
     </div>

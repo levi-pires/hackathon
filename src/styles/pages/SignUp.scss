@@ -1,85 +1,95 @@
 #signup-page {
   width: 100vw;
 
-	display: flex;
+  display: flex;
 
-	aside {
-		width: 250px;
+  aside {
+    width: 250px;
 
-		background-color: black;
+    background-color: black;
 
-		padding: 40px 0 0 75px;
+    padding: 80px 0 0 75px;
 
-		span {
-			font-size: 27px;
-			font-weight: 700;
-			color: white;
-		}
-	}
+    span {
+      font-size: 27px;
+      font-weight: 700;
+      color: white;
+    }
+  }
 
-	form {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    align-items: center;
 
-		height: 100%;
+    height: 100vh;
 
-		margin: 75px;
+    margin: 75px;
 
-		label {
-			display: flex;
-			flex-direction: column;
+    label {
+      position: relative;
 
-			margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
 
-			font-weight: 500;
+      margin-bottom: 25px;
 
-			input, select {
-				height: 35px;
-				width: 200px;
+      font-weight: 500;
 
-				border: 1px solid black;
+      small {
+        position: absolute;
+        left: 45px;
+        top: 2px;
 
-				margin: 5px 0 0 5px;
+        color: gray;
 
-				padding: 0 10px;
+        font-weight: 400;
+      }
 
-				border-radius: 2px;
-			}
-		}
+      input,
+      select {
+        height: 35px;
+        width: 200px;
 
-		label:last-child {
-			margin-bottom: 50px;
-		}
+        border: 1px solid black;
 
-		.check {
-			display: flex;
-			align-items: center;
+        margin-top: 5px;
 
-			font-size: 11px;
-			margin-bottom: 25px;
+        padding: 0 10px;
 
-			input {
-				margin-right: 10px;				
-			}
-		}
+        border-radius: 2px;
+      }
+    }
 
-		.button {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+    label:last-child {
+      margin-bottom: 50px;
+    }
 
-			height: 40px;
-			width: 225px;
+    .check {
+      display: flex;
+      align-items: center;
 
-			background-color: black;
+      font-size: 11px;
+      margin-bottom: 25px;
 
-			border-radius: 2px;
+      input {
+        margin-right: 10px;
+      }
+    }
 
-			a {
-				color: white;
-				text-decoration: none;
-			}
-		}
-	}
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 40px;
+      width: 222px;
+
+      background-color: black;
+
+      border-radius: 2px;
+
+      color: white;
+    }
+  }
 }
